@@ -344,7 +344,7 @@ justify-content: center;
 .people-div{
     display: inline-flex;
     width: 206px;
-    height: 44px;
+
     margin-bottom: 30px;
 }
 .people-box{
@@ -377,6 +377,9 @@ background-color: var(--accent-color);
         border-radius: 4px;
         padding: 16px 32px;
 
+}
+.client-li:hover{
+border: 1px solid var(--accent-color);
 }
 
 .client-ul .icon{
