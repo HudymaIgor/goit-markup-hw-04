@@ -245,11 +245,12 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    opacity: 0.8;
 }
 .button-hero:hover,
 .button-hero:focus {
-    color: var(--accent-color);
-    background-color: var(--primary-text-color);
+    opacity: 1;
+
 }
 
 /*section-text*/
@@ -264,14 +265,13 @@ ul {
 .text-container-icon{
     height: 120px;
     border-radius: 4px;
-    justify-content: center;
     background-color: var(--secondary-zone-color);
     /* outline: 3px solid var(--accent-color); */
     padding: 25px 100px;
     margin-bottom: 30px;
 }
 .text-svg{
-justify-content: center;
+
 width: 70px;
 height: 70px;
 }
@@ -384,20 +384,19 @@ display: block;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
         padding: 16px 32px;
-
-}
-.compani-a:hover,
-.compani-a:focus
-{
-border: 1px solid var(--accent-color);
-cursor: pointer;    
+        fill: var(--svg-color);
 }
 
 .client-ul .icon{
-    display: inline-block;
+    display: block;
             width: 106px;
             height: 60px;
         } 
+.compani-a:hover,
+.compani-a:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
 
 /*footer*/
 .footer {
@@ -575,7 +574,7 @@ margin-right: 10px;
     
     color: var(--primary-text-color);
 }
-.work-list .partfolio-li:hover
+.work-list .partfolio-li:hover,
 .work-list .partfolio-li:focus
 {
     cursor: pointer;
