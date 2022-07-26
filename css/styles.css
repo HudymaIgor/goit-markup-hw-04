@@ -245,11 +245,11 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    opacity: 0.8;
+ 
 }
 .button-hero:hover,
 .button-hero:focus {
-    opacity: 1;
+    opacity: 0.8;
 
 }
 
@@ -307,6 +307,30 @@ height: 70px;
 .picture-img{
     display: block;
 }
+/* .pictures-li{
+position: relative;
+}
+.pictures-div{
+    display: block;
+    width: 370px;
+    height: 70px;
+    padding-top:27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--background-color);
+
+    position: absolute;
+    bottom: 0;
+} */
+
 
 /*section-people*/
 .section-people {
@@ -528,17 +552,14 @@ margin-right: 10px;
 }
 
 /* portfolio */
-/*  work-list */
+/*  work-card */
 
-.work-list {
+.work-card {
     display: flex;
     flex-wrap: wrap;
 }
-.work-list a {
-    text-decoration: none;
-}
 
-.work-list li {
+.work-card li {
     /* box-sizing: border-box;     */
     background: var(--background-color);
     border: 1px solid var(--portfolio-border);
@@ -555,29 +576,36 @@ margin-right: 10px;
     margin-bottom: 0;
 }
 
+.card-a {
+    text-decoration: none;
+}
+
+.card-box-text{
+    width: 322px;
+    height: 70px;
+    margin: 20px 24px;
+}
+
 .work-tatle {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    padding: 20px 24px 0px;
+
     margin-bottom: 4px;
 }  
 
 .work-text {
-        padding: 0px 24px 20px;
-
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     
     color: var(--primary-text-color);
 }
-.work-list .partfolio-li:hover,
-.work-list .partfolio-li:focus
+.partfolio-li:hover,
+.partfolio-li:focus
 {
     cursor: pointer;
-    border: 1px solid var(--portfolio-border);
+    /* border: 1px solid var(--portfolio-border); */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+}   
